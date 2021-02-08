@@ -1,4 +1,7 @@
 # Thomas-The-Earrape-Engine
+
+### ORIGINALLY CREATE BY [Smirf123](https://github.com/Smirf123)
+
 Bliss to your ears, via the Discord Bot
 
 
@@ -11,4 +14,4 @@ Dependencies:
 Discord.py with Voice
 
 
-<h1>You do need to add your own .mp3 file, it doesn't matter the size just put it in the same directory as the bot and name it "audio.mp3"</h1>
+I just forked this, and threw Beefer yelling at his son in it.
