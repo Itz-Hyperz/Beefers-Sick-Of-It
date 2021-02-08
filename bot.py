@@ -3,7 +3,7 @@ import asyncio
 from discord.ext import commands
 from discord.utils import get
 TOKEN = 'Nzg5NTMwNzkwMjc5MTE4OTM4.X9zZ2Q.o9GWqAHKcgI6Zfmo92EbSJ8P_RU'
-BOT_PREFIX = '!'
+BOT_PREFIX = '.'
 
 client = commands.AutoShardedBot(command_prefix=BOT_PREFIX)
 client.remove_command("help")
@@ -11,7 +11,7 @@ client.remove_command("help")
 async def presence_change():
     while True:
         guilds = len(client.guilds)
-        activity = discord.Activity(type=discord.ActivityType.watching, name=f"{guilds} servers | !thomas")
+        activity = discord.Activity(type=discord.ActivityType.watching, name=f"{guilds} servers | .beef")
         await client.change_presence(status=discord.Status.online, activity=activity)
         await asyncio.sleep(15)
 
@@ -21,11 +21,11 @@ async def on_ready():
     client.loop.create_task(presence_change())
 
 @client.command(
-    name='thomas',
+    name='beef',
     description='Plays bliss in your ears',
     pass_context=True,
 )
-async def thomas(context):
+async def beef(context):
     channel = context.message.author.voice.channel
     await channel.connect()
     await context.channel.send("I joined the channel")
