@@ -2,7 +2,7 @@ import discord
 import asyncio
 from discord.ext import commands
 from discord.utils import get
-TOKEN = 'Nzg5NTMwNzkwMjc5MTE4OTM4.X9zZ2Q.o9GWqAHKcgI6Zfmo92EbSJ8P_RU'
+TOKEN = 'INSERT_TOKEN_HERE'
 BOT_PREFIX = '.'
 
 client = commands.AutoShardedBot(command_prefix=BOT_PREFIX)
